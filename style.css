@@ -1,0 +1,28 @@
+/* Se till att detta ligger i den CSS-fil du faktiskt laddar in (style.css eller styles.css) */
+
+/* 1. Gör containern till flex och centrera innehållet */
+.site-header .container {
+    display: flex;
+    flex-direction: column;    /* staplar logotyp och nav vertikalt */
+    align-items: center;       /* centrerar horisontellt */
+    gap: var(--gap);           /* mellanrum mellan logo och nav */
+    padding: var(--gap) 0;     /* behåll eventuell padding */
+  }
+  
+  /* 2. Ta bort ev. marginaler på logotypen */
+  .site-header .logo {
+    margin: 0;
+    text-align: center;        /* säkerställer att texten är centrerad */
+  }
+  
+  /* 3. Gör navlisten horisontell igen */
+  .main-nav ul {
+    display: flex;
+    gap: var(--gap);
+    list-style: none;
+  }
+  .main-nav a {
+    text-decoration: none;
+    color: var(--clr-dark);
+  }
+  
